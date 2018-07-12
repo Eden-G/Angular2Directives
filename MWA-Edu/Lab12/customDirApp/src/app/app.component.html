@@ -1,0 +1,13 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align:left">
+  <h1>
+    Welcome to {{ title }}!
+  </h1>
+  <app-list [lists]= 'names'> </app-list>
+    <h2  appMyvisisbility [myhidden]="val">
+      This text will be hidden.
+    </h2>
+    <h2 appMynewcolor [mycolor] = "color" (sendColor)="displayMessage($event)" >
+      Host element to test color.
+    </h2>
+  </div>
